@@ -1,0 +1,11 @@
+<div style="border:1px solid black;height:300px;overflow:hidden">
+	<div *ngFor="let components of componentList"
+   [id]="components.id" 
+   style="border:thin solid black;" 
+   draggable="true" 
+   (dragstart)="drag($event)">
+	{{components.value}} 
+  </div>
+	<!-- <div style="border:1px solid black;" draggable="true" (dragstart)="drag($event)" id="text">Text</div>
+	<div style="border:1px solid black;" draggable="true" (dragstart)="drag($event)" id="table">Table</div> -->
+</div>

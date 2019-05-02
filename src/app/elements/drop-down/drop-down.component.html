@@ -1,0 +1,8 @@
+<h4>Dropdown Component</h4>
+<h3>User List</h3>
+<select [(ngModel)]="selectedUser" >
+  <option *ngFor="let user of ddlData" [ngValue]="user.name">{{user.name}}</option>  
+
+</select>
+
+{{selectedUser}}
